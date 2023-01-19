@@ -3906,7 +3906,7 @@ input, select, textarea {
 				}
 
 				#main > .posts > article:nth-child(2n - 1) {
-					border-left-width: 2x;
+					border-left-width: 2px;
 				}
 
 				#main > .posts > article:nth-child(-n + 2) {
@@ -4620,7 +4620,6 @@ input, select, textarea {
 			right: 0;
 			text-align: right;
 			top: 0;
-			vertical-align: middle;
 			width: 7rem;
 		}
 
