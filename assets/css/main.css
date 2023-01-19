@@ -3906,7 +3906,7 @@ input, select, textarea {
 				}
 
 				#main > .posts > article:nth-child(2n - 1) {
-					border-left-width: 2px;
+					border-left-width: 2x;
 				}
 
 				#main > .posts > article:nth-child(-n + 2) {
