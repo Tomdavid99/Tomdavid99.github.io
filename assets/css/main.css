@@ -167,6 +167,65 @@ input, select, textarea {
 		a:hover {
 			border-bottom-color: transparent;
 		}
+	#nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #333; /* Background color of the navigation */
+        z-index: 1000; /* Ensure navigation is on top of other content */
+    }
+
+    #nav ul.links {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    #nav ul.links li {
+        display: inline-block;
+        margin-right: 20px;
+    }
+
+    #nav ul.links li.active a {
+        color: #fff; /* Active link color */
+    }
+
+    #nav ul.links li a {
+        display: block;
+        padding: 10px 20px;
+        color: #aaa; /* Default link color */
+        text-decoration: none;
+    }
+
+    #nav ul.links li a:hover {
+        color: #fff; /* Link color on hover */
+    }
+
+    /* Style the icons */
+    #nav ul.icons {
+        position: absolute;
+        top: 50%;
+        right: 20px;
+        transform: translateY(-50%);
+    }
+
+    #nav ul.icons li {
+        display: inline-block;
+        margin-left: 10px;
+    }
+
+    #nav ul.icons li a {
+        display: block;
+        color: #aaa; /* Icon color */
+        font-size: 18px;
+        line-height: 1;
+        text-decoration: none;
+    }
+
+    #nav ul.icons li a:hover {
+        color: #fff; /* Icon color on hover */
+    }
 
 	strong, b {
 		font-weight: 600;
