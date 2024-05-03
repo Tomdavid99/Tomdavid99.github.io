@@ -11,6 +11,21 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	<style>
+    /* Style the video container */
+	    .video-container {
+	        position: relative;
+	        width: 100%;
+	        height: 400px; /* Adjust height as needed */
+	        overflow: hidden;
+	    }
+	
+	    /* Style the video */
+	    video {
+	        width: 100%;
+	        height: auto;
+	    }
+	</style>
 	</head>
 	<body class="is-preload">
 
@@ -20,11 +35,31 @@
 				<!-- Intro -->
 					<div id="intro">
 						<h1>Tom Thankachan Portfolio</h1>
-						<p> Unlocking insights, driving decisions, and transforming raw data into meaningful narratives – this is the essence of my journey as a data analyst. As you navigate through this portfolio, you'll witness a collection of projects that showcase my proficiency in extracting valuable insights from complex datasets. Each project is a testament to my passion for leveraging data to solve real-world problems and drive informed decision-making.
-From exploratory data analysis to predictive modelling, each project demonstrates a unique set of skills and methodologies employed to unravel the stories hidden within the numbers. I invite you to delve into the diverse range of industries and domains explored, highlighting my adaptability and analytical prowess in tackling challenges.
-Whether it's identifying trends, uncovering patterns, or predicting future outcomes, my commitment to precision and detail is evident in every analysis. The projects presented here reflect my technical competence and underscore my ability to communicate findings effectively, ensuring that the insights gleaned are accessible and actionable.
-Embark on this journey with me as we traverse through projects that encapsulate the intersection of data, analytics, and meaningful decision-making. I'm excited to share these endeavours with you and demonstrate how data, when harnessed strategically, can be a powerful tool for transformative change.
-Thank you for joining me on this exploration of data-driven possibilities. </p>
+						<div class = "video-container">
+							< video id ="MyPortfilio" controls autoplays>
+								<source src = "MyPortfilio (2).mp4" type="video/mp4">
+							</video>
+						</div>
+						<script>
+    // Get the video element
+							var video = document.getElementById("MyPortfilio");
+						    	function playVideo() {
+						        var rect = video.getBoundingClientRect();
+						        var windowHeight = window.innerHeight || document.documentElement.clientHeight;
+						        // If the video is in the viewport
+						        if (rect.top >= 0 && rect.bottom <= windowHeight) {
+						            video.play();
+						        } else {
+						            video.pause();
+						        }
+						    }
+						
+						    // Call the function on scroll
+						    window.addEventListener("scroll", playVideo);
+						
+						    // Call the function on page load
+						    window.addEventListener("load", playVideo);
+						</script>
 						<ul class="actions">
 							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
 						</ul>
