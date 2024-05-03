@@ -35,31 +35,31 @@
 			<!-- Intro -->
 			<div id="intro">
 				<h1>Tom Thankachan Portfolio</h1>
-				<div class="video-container">
-					<video id="MyPortfilio" autoplay>
-						<source src="Media.mp4" type="video/mp4">
-					</video>
-				</div>
-				<script>
+			<div class="video-container">
+				<video id="MyPortfilio" autoplay>
+					<source src="Media.mp4" type="video/mp4">
+				</video>
+			</div>
+			<script>
 				    // Get the video element
-					var video = document.getElementById("MyPortfilio");
-					function playVideo() {
-						var rect = video.getBoundingClientRect();
-						var windowHeight = window.innerHeight || document.documentElement.clientHeight;
-						// If the video is in the viewport
-						if (rect.top >= 0 && rect.bottom <= windowHeight) {
-							video.play();
+				var video = document.getElementById("MyPortfilio");
+				function playVideo() {
+				var rect = video.getBoundingClientRect();
+				var windowHeight = window.innerHeight || document.documentElement.clientHeight;
+				// If the video is in the viewport
+				if (rect.top >= 0 && rect.bottom <= windowHeight) {
+					video.play();
 						} else {
 							video.pause();
 						}
 					}
-					
-					// Call the function on scroll
-					window.addEventListener("scroll", playVideo);
-					
-					// Call the function on page load
-					window.addEventListener("load", playVideo);
-				</script>
+						
+				// Call the function on scroll
+				window.addEventListener("scroll", playVideo);
+						
+				// Call the function on page load
+				window.addEventListener("load", playVideo);
+			</script>
 				<ul class="actions">
 					<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
 				</ul>
