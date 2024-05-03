@@ -52,32 +52,6 @@
                 </ul>
             </nav>
             </div>
-            <div class="video-container">
-                    <video id="MyPortfolio"autoplay>
-                        <source src="Media.mp4" type="video/mp4">
-                    </video>
-                </div>
-                <script>
-                    // Get the video element
-                    var video = document.getElementById("MyPortfolio");
-
-                    function playVideo() {
-                        var rect = video.getBoundingClientRect();
-                        var windowHeight = window.innerHeight || document.documentElement.clientHeight;
-                        // If the video is in the viewport
-                        if (rect.top >= 0 && rect.bottom <= windowHeight) {
-                            video.play();
-                        } else {
-                            video.pause();
-                        }
-                    }
-
-                    // Call the function on scroll
-                    window.addEventListener("scroll", playVideo);
-
-                    // Call the function on page load
-                    window.addEventListener("load", playVideo);
-                </script>
             <!-- Main -->
             <div id="main">
             
