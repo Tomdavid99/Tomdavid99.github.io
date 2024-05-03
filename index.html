@@ -1,191 +1,145 @@
 <!DOCTYPE HTML>
 <!--
-	Massively by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+    Massively by HTML5 UP
+    html5up.net | @ajlkn
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-	<head>
-		<title>Tom Thankachan Portfolio</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		<style>
-	    /* Style the video container */
-		    .video-container {
-		        position: relative;
-		        width: 100%;
-		        height: 400px; /* Adjust height as needed */
-		        overflow: hidden;
-		    }
-		
-		    /* Style the video */
-		    video {
-		        width: 100%;
-		        height: auto;
-		    }
-		</style>
-	</head>
-	<body class="is-preload">
+    <head>
+        <title>Tom Thankachan Portfolio</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+        <style>
+            /* Style the video container */
+            .video-container {
+                position: relative;
+                width: 100%;
+                height: 400px; /* Adjust height as needed */
+                overflow: hidden;
+            }
 
-		<!-- Wrapper -->
-			<div id="wrapper" class="fade-in">
+            /* Style the video */
+            video {
+                width: 100%;
+                height: auto;
+            }
+        </style>
+    </head>
+    <body class="is-preload">
 
-				<!-- Intro -->
-					<div id="intro">
-						<h1>Tom Thankachan Portfolio</h1>
-						<div class = "video-container">
-							<video id ="MyPortfilio" controls autoplay>
-								<source src = "Media" type="video/mp4">
-							</video>
-						</div>
-						<script>
-    // Get the video element
-							var video = document.getElementById("MyPortfilio");
-						    	function playVideo() {
-						        var rect = video.getBoundingClientRect();
-						        var windowHeight = window.innerHeight || document.documentElement.clientHeight;
-						        // If the video is in the viewport
-						        if (rect.top >= 0 && rect.bottom <= windowHeight) {
-						            video.play();
-						        } else {
-						            video.pause();
-						        }
-						    }
-						
-						    // Call the function on scroll
-						    window.addEventListener("scroll", playVideo);
-						
-						    // Call the function on page load
-						    window.addEventListener("load", playVideo);
-						</script>
-						<ul class="actions">
-							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
-						</ul>
-					</div>
+        <!-- Wrapper -->
+        <div id="wrapper" class="fade-in">
 
-				<!-- Header -->
-					<header id="header">
-						<a href="index.html" class="logo">Portfolio projects</a>
-					</header>
+            <!-- Intro -->
+            <div id="intro">
+                <h1>Tom Thankachan Portfolio</h1>
+                <div class="video-container">
+                    <video id="MyPortfolio" controls autoplay>
+                        <source src="Media" type="video/mp4">
+                    </video>
+                </div>
+                <script>
+                    // Get the video element
+                    var video = document.getElementById("MyPortfolio");
 
-				<!-- Nav -->
-					<nav id="nav">
-						<ul class="links">
-							<li class="active"><a href="index.html">Projects</a></li>
-						</ul>
-						<ul class="icons">
-							<li><a href="https://www.linkedin.com/in/tom-david-thankachan-aa0829232/" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
-							<li><a href="https://github.com/Tomdavid99" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-						</ul>
-					</nav>
+                    function playVideo() {
+                        var rect = video.getBoundingClientRect();
+                        var windowHeight = window.innerHeight || document.documentElement.clientHeight;
+                        // If the video is in the viewport
+                        if (rect.top >= 0 && rect.bottom <= windowHeight) {
+                            video.play();
+                        } else {
+                            video.pause();
+                        }
+                    }
 
-				<!-- Main -->
-					<div id="main">
+                    // Call the function on scroll
+                    window.addEventListener("scroll", playVideo);
 
-						<!-- Featured Post -->
-							<article class="post featured">
-								<header class="major">
-									<h2> Websrcaping using Python BeautifulSoup</h2>
-									<a href="https://github.com/Andrew-Lee-A/Webinar_Tracker/blob/scrapper/Webscrapper_2.py" class="image fit"><img src="images/4458178.jpg"/></a>
-									<p>In this scraped i have used BeautifulSoup4(BS4)whcih is a framework that is built into Python. 
-										BS4 is great frame that allows user to grab content from the web and store that content. 
-										For the base of this project used BS4 for grab text based content from the engineeringnz.org 
-										and cleaned and stored the content into rows and coloumns in a table format the use of Python's Pandas. 
-										This project was conduct with a group of 4 people and i was in charge of scraping the content. 
-									</p>
-								</header>
-								
-								<ul class="actions special">
-									<li><a href="https://github.com/Andrew-Lee-A/Webinar_Tracker/blob/scrapper/Webscrapper_2.py" class="button large">View Project</a></li>
-								</ul>
-							</article>
+                    // Call the function on page load
+                    window.addEventListener("load", playVideo);
+                </script>
+                <ul class="actions">
+                    <li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+                </ul>
+            </div>
 
-						<!-- Posts -->
-							<section class="posts">
-								<article>
-									<header>
-										<h2>Database Exploration with SQL Server</h2>
-										<a href="https://github.com/Tomdavid99/project" class="image fit"><img src="images/download.jpg" alt="" /></a>
-										<p>This project consits of exploring the Covid-19 dataset. The link for the dataset can be found on a ourworldindata organisation page 
-										and nagivating to covid-deaths you will findthe dataset there. clicking the link will take you the pages also. 
-										</p>
-									
-									</header>
-									<ul class="actions special">
-										<li><a href="https://github.com/Tomdavid99/project" class="button">View Project </a></li>
-									</ul>
-								</article>
+            <!-- Header -->
+            <header id="header">
+                <a href="index.html" class="logo">Portfolio projects</a>
+            </header>
 
-								<article>
-									<header>
-										<h2>Data Professional Breakdown with Power BI</h2>
-										<a href="https://app.powerbi.com/groups/me/reports/70d23a36-0a00-4743-939e-d22a44ffec9c/ReportSection" class="image fit"><img src="images/Screenshot 2023-02-02 204956.jpg" alt="" /></a>
-										<p> This data is a breakdown of a survey that was conducted by Alex The Analyst, the data is stored in a excel spreadsheet. 
-											The spreadsheet contains information which are answers to a unique set of questions. For example 
-											"What is your most current title","What is your current salary", "What industry do you work in" and 
-											"What is your favourite Programming Language". These are just a few example of the questions in the spreadsheet. 
-										</p>
-			
-									</header>
-									<ul class="actions special">
-										<li><a href="https://app.powerbi.com/groups/me/reports/70d23a36-0a00-4743-939e-d22a44ffec9c/ReportSection" class="button">View Project </a></li>
-									</ul>
-								</article>
+            <!-- Nav -->
+            <nav id="nav">
+                <ul class="links">
+                    <li class="active"><a href="index.html">Projects</a></li>
+                </ul>
+                <ul class="icons">
+                    <li><a href="https://www.linkedin.com/in/tom-david-thankachan-aa0829232/" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
+                    <li><a href="https://github.com/Tomdavid99" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+                </ul>
+            </nav>
 
-								<article>	
-									<header>
-										<h2>Data Exploration / Regression Analysis </h2>
-											<a href="https://github.com/Tomdavid99/AirQuality" class="image fit"><img src="images/AirQualitySummary.jpg" alt="" /></a>
-											<p>For the purpose of the Data Exploration and Regression Analysis, I have chosen to work with Air Quality in Italy Dataset the UCI Machine Learning Repository have provided the dataset. 
-												The quality of the air is assessed by using five different type of metal oxide chemical embedded in an Air Quality Chemical Multisensory Device. 
-												These devices have placed in areas where there is significant amount of pollution throughout the cites of Italy. 
-												The data that is stored in the spreadsheet has been collected from March 2004 to February 2005.
-											</p>
-										</header>
-										<ul class="actions special">
-											<li><a href="https://github.com/Tomdavid99/AirQuality" class="button">View Project </a></li>
-										</ul>
-									</article>
+            <!-- Main -->
+            <div id="main">
 
-									<article>
-										<header>
-											<h2> Investment Analysis</h2>
-											<a href="https://github.com/Tomdavid99/Investment-Analysis"class="image fit"><img src="images/Y0JRUyjL0a4yg4Fmv28Y.jpg" alt=""/></a>
-											<p>I had to write a report in which you analyse a company listed on the NZ stock exchange (NZX). Write 
-												as if you are an investment analyst offering a recommendation to an interested person. I was allocated to analyse
-												the Steel and Tube Holding (STU) company which was listed on the New Zealand Stock. In order to complete the 
-												Investment Analysis I had calculate the marketing values such as the 
-												Return of Equity (ROE), Market to Book ratio (M2B), Earning Per Shares(EPS) and the Price-to-Earning-Ratio (P/E ratio). Which was all calculated using
-												Microsoft Excel and the values provided by the NZX stock exchange.   
-											</p>
-										</header>
-										<ul class="actions special">
-											<li><a href="https://github.com/Tomdavid99/Investment-Analysis" class="button">View Project </a></li>
-										</ul>
-									</article>
-						<!-- Footer -->
+                <!-- Featured Post -->
+                <article class="post featured">
+                    <header class="major">
+                        <h2>Webscraping using Python BeautifulSoup</h2>
+                        <a href="https://github.com/Andrew-Lee-A/Webinar_Tracker/blob/scrapper/Webscrapper_2.py" class="image fit"><img src="images/4458178.jpg" alt="" /></a>
+                        <p>In this scraped I have used BeautifulSoup4 (BS4) which is a framework that is built into Python. 
+                            BS4 is a great frame that allows users to grab content from the web and store that content. 
+                            For the base of this project, I used BS4 to grab text-based content from engineeringnz.org 
+                            and cleaned and stored the content into rows and columns in a table format using Python's Pandas. 
+                            This project was conducted with a group of 4 people and I was in charge of scraping the content.
+                        </p>
+                    </header>
 
-					</div>
+                    <ul class="actions special">
+                        <li><a href="https://github.com/Andrew-Lee-A/Webinar_Tracker/blob/scrapper/Webscrapper_2.py" class="button large">View Project</a></li>
+                    </ul>
+                </article>
 
-				<!-- Footer -->
+                <!-- Posts -->
+                <section class="posts">
+                    <article>
+                        <header>
+                            <h2>Database Exploration with SQL Server</h2>
+                            <a href="https://github.com/Tomdavid99/project" class="image fit"><img src="images/download.jpg" alt="" /></a>
+                            <p>This project consists of exploring the Covid-19 dataset. The link for the dataset can be found on ourworldindata organization page 
+                                and navigating to covid-deaths you will find the dataset there. Clicking the link will take you to the pages also.
+                            </p>
+                        </header>
+                        <ul class="actions special">
+                            <li><a href="https://github.com/Tomdavid99/project" class="button">View Project</a></li>
+                        </ul>
+                    </article>
 
-				<!-- Copyright -->
-					<div id="copyright">
-						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
-					</div>
+                    <!-- More articles... -->
+                </section>
+            </div>
 
-			</div>
+            <!-- Footer -->
+            <div id="footer">
+                <!-- Copyright -->
+                <div id="copyright">
+                    <ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+                </div>
+            </div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+        </div>
 
-	</body>
+        <!-- Scripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.scrollex.min.js"></script>
+        <script src="assets/js/jquery.scrolly.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
+
+    </body>
 </html>
